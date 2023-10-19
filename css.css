@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+
+body {
+    background: url(/img/background.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+#road {
+    background: url(/img/road.png) repeat-y;
+    height: 1200vh;
+    width: 700px;
+    position: relative;
+    top: -80vh;
+    z-index: -9;
+    border: 2px solid rgb(255, 0, 0); 
+}
+
+#start {
+    position: absolute;
+    z-index: 100;
+    font-size: 2rem;
+    background-color: rgb(245, 99, 99);
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+.mycarimg {
+    border: 2px solid red;
+    width: 100px;
+}
+#mycar {
+    width: 125px;
+    height: 125px;
+    position: relative;
+    top: 80vh;
+}
+
+@keyframes roadanimation {
+    0% {
+        top: -1100vh;
+
+    }
+
+    100% {
+        top: -200vh;
+    }
+}
