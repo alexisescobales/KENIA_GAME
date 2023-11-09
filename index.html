@@ -1,24 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[SAFARI_RACE]</title>
+    <title>RACE&QUIZ KENIA</title>
     <link rel="stylesheet" href="css.css">
+    <link rel="icon" type="image/x-icon" href="/img/icon.png">
+    
 </head>
+<body>     
+    <div class="game">
+        <div id="score">Score : 0</div>
+        <button id="start">START</button>
+        <div id="mycar"><img id="mycarimg" class="mycarimg" src="/img/car.png"></div>
+        <div id="marcador">
+            <h1 id="items"></h1>
+            <div id="animals">
+                <h1 id="leon"></h1>
+                <h1 id="zebra"></h1>
+                <h1 id="jirafa"></h1>
+                <h1 id="cocodrilo"></h1>
+                <h1 id="buey"></h1>
+                <h1 id="elefante"></h1>
+                <h1 id="hipopotamo"></h1>
+                <h1 id="tigre"></h1>
+                <h1 id="mono"></h1>
+                <h1 id="rinoceronte"></h1>
+            </div>
+        </div>
+        <div id="road"></div>
+        <div id="objetos"></div>
+    </div>
 
-
-<body>
-
-    <div id="score">Score : 0</div>
-    <button id="start">Start</button>
-
-    <div id="mycar"><img id="mycarimg" class="mycarimg" src="/img/car.png"></div>
-    <div id="road"></div>
-
-
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <img id="bossImage" src="">
+            <h2 id="boss"></h2>
+            <p id="question"></p>
+            <form id="quizForm">
+                <div id="options">
+                    <label>
+                        <input>
+                    </label>
+                    <label>
+                        <input>
+                    </label>
+                    <label>
+                        <input>
+                    </label>
+                </div>
+                <button type="button" id="checkAnswer" onclick="checkAnswer()"class="myButton">COMPROBAR</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="js.js"></script>
 </body>
-<script src="js.js"></script>
 </html>
